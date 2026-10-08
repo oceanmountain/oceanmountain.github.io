@@ -1,0 +1,34 @@
+title: Ocean Ledger Developer Portal
+tagline: Build integrations on the Ocean Ledger API
+description: Demo developer documentation for the fictional Ocean Ledger accounting API, hosted on GitHub Pages.
+url: "https://oceanmountain.github.io"
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: doc
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules

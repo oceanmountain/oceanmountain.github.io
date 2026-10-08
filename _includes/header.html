@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="32" height="32">
+      <span>Ocean Ledger <strong>Developers</strong></span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      {% for item in site.data.navigation.top %}
+        <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+      <div class="search">
+        <input id="search-input" type="search" placeholder="Search docs…" aria-label="Search documentation" autocomplete="off">
+        <ul id="search-results" class="search-results" hidden></ul>
+      </div>
+      <a class="btn btn-primary btn-sm" href="{{ '/docs/getting-started/' | relative_url }}">Get started</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,39 @@
+top:
+  - title: Guides
+    url: /docs/getting-started/
+  - title: API reference
+    url: /docs/reference/invoices/
+  - title: Changelog
+    url: /docs/changelog/
+
+sidebar:
+  - title: Introduction
+    items:
+      - title: Getting started
+        url: /docs/getting-started/
+      - title: Core concepts
+        url: /docs/concepts/
+  - title: Guides
+    items:
+      - title: Authentication
+        url: /docs/authentication/
+      - title: Querying data
+        url: /docs/querying/
+      - title: Rate limits
+        url: /docs/rate-limits/
+      - title: Errors
+        url: /docs/errors/
+      - title: Webhooks
+        url: /docs/webhooks/
+  - title: API reference
+    items:
+      - title: Accounts
+        url: /docs/reference/accounts/
+      - title: Items
+        url: /docs/reference/items/
+      - title: Invoices
+        url: /docs/reference/invoices/
+  - title: Resources
+    items:
+      - title: Changelog
+        url: /docs/changelog/

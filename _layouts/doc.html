@@ -1,0 +1,33 @@
+---
+layout: default
+body_class: page-doc
+---
+<div class="doc-shell">
+  <aside class="doc-sidebar" aria-label="Documentation navigation">
+    {% include sidebar.html %}
+  </aside>
+
+  <article class="doc-content">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span>/</span>
+      <span>{{ page.section | default: "Docs" }}</span>
+    </nav>
+
+    <h1>{{ page.title }}</h1>
+    {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+
+    <div class="prose">
+      {{ content }}
+    </div>
+
+    <div class="doc-footer">
+      <a class="edit-link" href="https://github.com/oceanmountain/oceanmountain.github.io/edit/main/{{ page.path }}">Edit this page on GitHub</a>
+    </div>
+  </article>
+
+  <aside class="doc-toc" aria-label="On this page">
+    <p class="toc-title">On this page</p>
+    <ul id="toc"></ul>
+  </aside>
+</div>
