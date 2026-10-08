@@ -3,6 +3,8 @@ top:
     url: /docs/getting-started/
   - title: API reference
     url: /docs/reference/invoices/
+  - title: API explorer
+    url: /api-explorer/
   - title: Changelog
     url: /docs/changelog/
 
@@ -33,6 +35,8 @@ sidebar:
         url: /docs/reference/items/
       - title: Invoices
         url: /docs/reference/invoices/
+      - title: API explorer
+        url: /api-explorer/
   - title: Resources
     items:
       - title: Changelog

@@ -1,0 +1,26 @@
+---
+layout: default
+title: API explorer
+permalink: /api-explorer/
+---
+<link rel="stylesheet" href="{{ '/assets/vendor/swagger-ui/swagger-ui.css' | relative_url }}">
+<section class="explorer">
+  <div class="explorer-intro">
+    <h1>API explorer</h1>
+    <p class="lead">Browse every endpoint of the demo API, with parameters, schemas and example payloads. The OpenAPI file is also available to download: <a href="{{ '/openapi.yaml' | relative_url }}">openapi.yaml</a>.</p>
+  </div>
+  <div id="swagger-ui"></div>
+</section>
+<script src="{{ '/assets/vendor/swagger-ui/swagger-ui-bundle.js' | relative_url }}"></script>
+<script>
+  window.addEventListener("load", function () {
+    window.ui = SwaggerUIBundle({
+      url: "{{ '/openapi.yaml' | relative_url }}",
+      dom_id: "#swagger-ui",
+      deepLinking: true,
+      docExpansion: "list",
+      defaultModelsExpandDepth: 0,
+      supportedSubmitMethods: []
+    });
+  });
+</script>
